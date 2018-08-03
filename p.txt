@@ -1,0 +1,84 @@
+dtp-gate-159.log:09:42:46,709 DEBUG DubboService - [DTP v6.1.16.10] 请求报文：{date=43313, traceid=9AEBCD31E9C824333, txInstNo=1299983Q, channelNo=15, pwdSealModeCode=0, cardPwd=AFCB583C55BC99AF, txSendTime=161400, txSerialNo=9AEBCD31E9C824333, sysTrackNo=1, sessionid=, mac=1, accStatFormCode=1, sendSysCode=99700040001, bankNo=1299983Q, commAddr=北京, transCode=S62020002, class=com.psbc.ifp.ac.api.IAccVirCdmLegOpenRequest, accountingDate=20180206, seqno=9AEBCD31E9C824333, accName=cs, payLimitAmt=0, accSysCode=99710620000, custName=cs, userId=20180531000045643, bind1ClassAcc=6210984250000005226, hjAccType=1, psbcOthBankCardTypeCode=0, txSendDate=20180111, txAttribute=0}
+
+
+dtp-gate-159.log:09:42:46,709 INFO  DatagramConverter - [DTP v6.1.16.10] Converting in <-- POJO {date=43313, traceid=9AEBCD31E9C824333, txInstNo=1299983Q, channelNo=15, pwdSealModeCode=0, cardPwd=AFCB583C55BC99AF, txSendTime=161400, txSerialNo=9AEBCD31E9C824333, sysTrackNo=1, sessionid=, mac=1, accStatFormCode=1, sendSysCode=99700040001, bankNo=1299983Q, commAddr=北京, transCode=S62020002, class=com.psbc.ifp.ac.api.IAccVirCdmLegOpenRequest, accountingDate=20180206, seqno=9AEBCD31E9C824333, accName=cs, payLimitAmt=0, accSysCode=99710620000, custName=cs, userId=20180531000045643, bind1ClassAcc=6210984250000005226, hjAccType=1, psbcOthBankCardTypeCode=0, txSendDate=20180111, txAttribute=0} (super class com.psbc.ifp.ac.api.PubRequest) ...
+
+
+
+dtp-gate-159.log:09:42:46,710 DEBUG DatagramConverter - [DTP v6.1.16.10] 字段: traceid, value: 9AEBCD31E9C824333 --> Cache Key: traceid
+
+dtp-gate-159.log:09:42:46,710 DEBUG DatagramConverter - [DTP v6.1.16.10] 字段: seqno, value: 9AEBCD31E9C824333 --> Cache Key: seqno
+
+dtp-gate-159.log:09:42:46,710 DEBUG DatagramConverter - [DTP v6.1.16.10] 字段: txSerialNo, value: 9AEBCD31E9C824333 --> Cache Key: txSerialNo
+
+dtp-gate-159.log:09:42:46,710 INFO  DatagramConverter - [DTP v6.1.16.10] POJO -> POJOCache: {date=43313, traceid=9AEBCD31E9C824333, txInstNo=1299983Q, channelNo=15, pwdSealModeCode=0, cardPwd=AFCB583C55BC99AF, txSerialNo=9AEBCD31E9C824333, txSendTime=161400, sysTrackNo=1, sessionid=, mac=1, accStatFormCode=1, sendSysCode=99700040001, bankNo=1299983Q, commAddr=北京, transCode=S62020002, accountingDate=20180206, seqno=9AEBCD31E9C824333, accName=cs, payLimitAmt=0, accSysCode=99710620000, custName=cs, userId=20180531000045643, bind1ClassAcc=6210984250000005226, hjAccType=1, psbcOthBankCardTypeCode=0, txSendDate=20180111, txAttribute=0}
+
+dtp-gate-159.log:09:42:46,710 DEBUG StringConverter - Converting 'String' value '9AEBCD31E9C824333' to type 'String'
+dtp-gate-159.log:09:42:46,710 DEBUG DatagramField - [DTP v6.1.16.10] com.psbc.ifp.ac.api.IAccVirCdmLegOpenRequest.traceid(=9AEBCD31E9C824333) -> 报文 tran.traceid, occ 0
+dtp-gate-159.log:09:42:46,710 DEBUG StringConverter - Converting 'String' value '9AEBCD31E9C824333' to type 'String'
+dtp-gate-159.log:09:42:46,710 DEBUG DatagramField - [DTP v6.1.16.10] com.psbc.ifp.ac.api.IAccVirCdmLegOpenRequest.seqno(=9AEBCD31E9C824333) -> 报文 tran.cltseqno, occ 0
+dtp-gate-159.log:09:42:46,710 DEBUG StringConverter - Converting 'String' value '9AEBCD31E9C824333' to type 'String'
+dtp-gate-159.log:09:42:46,710 DEBUG DatagramField - [DTP v6.1.16.10] com.psbc.ifp.ac.api.IAccVirCdmLegOpenRequest.txSerialNo(=9AEBCD31E9C824333) -> 报文 global.seqno, occ 0
+dtp-gate-159.log:09:42:46,711 DEBUG DatagramConverter - [DTP v6.1.16.10] tran.cltseqno 0 9AEBCD31E9C824333
+dtp-gate-159.log:09:42:46,711 DEBUG DatagramConverter - [DTP v6.1.16.10] global.seqno 0 9AEBCD31E9C824333
+dtp-gate-159.log:09:42:46,711 DEBUG RMQGateway - [DTP v6.1.16.10] {Enter-RMQGateway} is doing request({43110,9AEBCD31E9C824333})...
+dtp-gate-159.log:09:42:46,711 DEBUG RMQGateway - [DTP v6.1.16.10] 交易请求 {43110,9AEBCD31E9C824333} 发送至 amq.direct->ACC_SERVER_REQ_RECV, 应答队列 075dd8d818cd4ba0b70c247ed967caa3.
+
+
+dtp-gate-159.log:09:42:46,711 INFO  RMQGateway - [DTP v6.1.16.10] 开始等待 {43110,9AEBCD31E9C824333} 应答, 超时时间 3000 ...
+dtp-gate-159.log:09:42:46,721 INFO  RMQGateway - [DTP v6.1.16.10] 应答消息已解包：{43110,9AEBCD31E9C824333}
+dtp-gate-159.log:09:42:46,721 DEBUG RMQGateway - [DTP v6.1.16.10] tran.cltseqno 0 9AEBCD31E9C824333
+dtp-gate-159.log:09:42:46,721 DEBUG RMQGateway - [DTP v6.1.16.10] global.seqno 0 9AEBCD31E9C824333
+dtp-gate-159.log:09:42:46,721 DEBUG POJOCacheFactory - [DTP v6.1.16.10] 获取交易的Cache对象:[{date=43313, traceid=9AEBCD31E9C824333, txInstNo=1299983Q, channelNo=15, pwdSealModeCode=0, cardPwd=AFCB583C55BC99AF, txSerialNo=9AEBCD31E9C824333, txSendTime=161400, sysTrackNo=1, sessionid=, mac=1, accStatFormCode=1, sendSysCode=99700040001, bankNo=1299983Q, commAddr=北京, transCode=S62020002, accountingDate=20180206, seqno=9AEBCD31E9C824333, accName=cs, payLimitAmt=0, accSysCode=99710620000, custName=cs, userId=20180531000045643, bind1ClassAcc=6210984250000005226, hjAccType=1, psbcOthBankCardTypeCode=0, txSendDate=20180111, txAttribute=0}]
+dtp-gate-159.log:09:42:46,721 DEBUG DatagramConverter - [DTP v6.1.16.10] Cache Key txSerialNo --> 字段 txSerialNo, value: 9AEBCD31E9C824333
+dtp-gate-159.log:09:42:46,722 INFO  DatagramConverter - [DTP v6.1.16.10] POJOCache -> POJO: {txSerialNo=9AEBCD31E9C824333, sysTrackNo=1, transCode=S62020002, class=com.psbc.ifp.ac.api.IAccVirCdmLegOpenResponse, mac=1}
+dtp-gate-159.log:09:42:46,722 DEBUG DatagramField - [DTP v6.1.16.10] 报文 global.seqno, occ 0(=9AEBCD31E9C824333) -> com.psbc.ifp.ac.api.IAccVirCdmLegOpenResponse.txSerialNo
+dtp-gate-159.log:09:42:46,722 INFO  DatagramConverter - [DTP v6.1.16.10] 从报文池转出的POJO: {errMsg=日期错误，正确日期为:20150818, txSerialNo=9AEBCD31E9C824333, sysTrackNo=1, transCode=S62020002, retCode=200121, class=com.psbc.ifp.ac.api.IAccVirCdmLegOpenResponse, mac=1}
+dtp-gate-159.log:09:42:46,722 DEBUG DubboService - [DTP v6.1.16.10] 应答报文：{errMsg=日期错误，正确日期为:20150818, txSerialNo=9AEBCD31E9C824333, sysTrackNo=1, transCode=S62020002, retCode=200121, class=com.psbc.ifp.ac.api.IAccVirCdmLegOpenResponse, mac=1}
+main.log:09:42:46,708 [pool-6-thread-25] INFO  LogUtil - -->服务请求参数:{"date":43313,"traceid":"9AEBCD31E9C824333","txInstNo":"1299983Q","channelNo":"15","pwdSealModeCode":"0","cardPwd":"AFCB583C55BC99AF","txSendTime":"161400","txSerialNo":"9AEBCD31E9C824333","sysTrackNo":"1","sessionid":"","mac":"1","accStatFormCode":"1","sendSysCode":"99700040001","bankNo":"1299983Q","commAddr":"北京","transCode":"S62020002","class":"com.psbc.ifp.ac.api.IAccVirCdmLegOpenRequest","accountingDate":"20180206","seqno":"9AEBCD31E9C824333","accName":"cs","payLimitAmt":0,"accSysCode":"99710620000","custName":"cs","userId":"20180531000045643","bind1ClassAcc":"6210984250000005226","hjAccType":"1","psbcOthBankCardTypeCode":"0","txSendDate":"20180111","localAddress":"192.168.1.12:14541","txAttribute":"0"}
+main.log:09:42:46,723 [pool-6-thread-49] INFO  LogUtil - -->服务响应参数:{"errMsg":"日期错误，正确日期为:20150818","txSerialNo":"9AEBCD31E9C824333","sysTrackNo":"1","transCode":"S62020002","retCode":"200121","class":"com.psbc.ifp.ac.api.IAccVirCdmLegOpenResponse","mac":"1"}
+
+
+
+
+
+
+
+
+
+
+dtp-trans10.log:09:42:46,715 INFO  TransactionImpl - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 开始运行【正常】交易 { 611100, '虚拟二类账户开户' }, 交易开始时间【2018-08-02T01:42:46.715Z】，超时时间【PT7S】
+
+dtp-trans10.log:09:42:46,715 INFO  FlowService - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 开始运行原子服务 {com.nantian.dtp.transaction.atom.AGenBeginTimestamp, '生成交易开始时间戳'}...
+dtp-trans10.log:09:42:46,716 INFO  FlowService - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 原子服务 {com.nantian.dtp.transaction.atom.AGenBeginTimestamp, '生成交易开始时间戳'} 运行【成功】
+dtp-trans10.log:09:42:46,716 INFO  FlowService - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 服务 SGenBeginTimestamp 运行成功，用时 1 毫秒
+
+dtp-trans10.log:09:42:46,716 INFO  FlowService - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 开始运行原子服务 {com.nantian.cbs.useracc.atom.AUserIdQry, '用户编号全局获取'}...
+dtp-trans10.log:09:42:46,716 INFO  FlowService - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 原子服务 {com.nantian.cbs.useracc.atom.AUserIdQry, '用户编号全局获取'} 运行【成功】
+dtp-trans10.log:09:42:46,716 INFO  FlowService - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 服务 SUserIdQry 运行成功，用时 0 毫秒
+
+dtp-trans10.log:09:42:46,716 INFO  FlowService - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 开始运行原子服务 {com.nantian.cbs.acc.tran.pboc.APubAccountingDateChk, '账户中心会计日期检查'}...
+dtp-trans10.log:09:42:46,718 ERROR TransactionImpl - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 交易 { 611100, '虚拟二类账户开户' }失败:
+
+dtp-trans10.log:09:42:46,719 INFO  FlowService - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 开始运行原子服务 {com.nantian.dtp.service.jnlreg.AJnlReg, '流水登记服务'}...
+dtp-trans10.log:09:42:46,719 DEBUG ConvertUtils - Convert string '9AEBCD31E9C824333' to class 'java.lang.String'
+dtp-trans10.log:09:42:46,719 DEBUG StringConverter - Converting 'String' value '9AEBCD31E9C824333' to type 'String'
+dtp-trans10.log:09:42:46,719 INFO  FlowService - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 原子服务 {com.nantian.dtp.service.jnlreg.AJnlReg, '流水登记服务'} 运行【成功】
+dtp-trans10.log:09:42:46,719 INFO  FlowService - [DTP v6.1.16.10]{43110,9AEBCD31E9C824333} 服务 SJnlReg 运行成功，用时 0 毫秒
+
+dtp-trans10.log:09:42:46,719 INFO  TransactionImpl - [DTP v6.1.16.10]交易 { 611100, '虚拟二类账户开户' } {43110,9AEBCD31E9C824333} 处理结束，用时 4 毫秒，结果为【FAIL】
+dtp-trans10.log:09:42:46,720 INFO  RMQGateway - [DTP v6.1.16.10] 交易 {43110,9AEBCD31E9C824333} 应答发送至 amq.direct->075dd8d818cd4ba0b70c247ed967caa3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
